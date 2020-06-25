@@ -1,0 +1,673 @@
+{% extends 'data.html' %}
+{#<html class="no-js" lang="zxx">#}
+{##}
+{#<head>#}
+{#	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">#}
+{#	<meta http-equiv="X-UA-Compatible" content="IE=edge">#}
+{#	<meta name="viewport" content="width=device-width, initial-scale=1.0">#}
+{#	<meta name="description" content="">#}
+{#	<meta name="keywords" content="">#}
+{#	<meta name="robots" content="index,follow">#}
+{##}
+{#    <title>Crazy Mar - Job Portal</title>#}
+{##}
+{#	<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">#}
+{#    <link href="assets/plugins/bootstrap/css/bootsnav.css" rel="stylesheet">#}
+{#    <link href="assets/plugins/icons/css/icons.css" rel="stylesheet">#}
+{#	<link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap/css/bootstrap-wysihtml5.css">#}
+{#    <link href="assets/plugins/animate/animate.css" rel="stylesheet">#}
+{#	<link rel="stylesheet" href="assets/plugins/nice-select/css/nice-select.css">	#}
+{#    <link href="assets/plugins/date-dropper/datedropper.css" rel="stylesheet">#}
+{#    <link href="assets/plugins/aos-master/aos.css" rel="stylesheet">	#}
+{#    <link href="assets/css/style.css" rel="stylesheet">#}
+{#	<link href="assets/css/responsiveness.css" rel="stylesheet">#}
+{#    <link href="assets/css/skin/default.css" rel="stylesheet">#}
+{#    <link href="assets/css/main.css" rel="stylesheet">#}
+{#    <style>#}
+{#        body, section {#}
+{#            background: #f1f1f1;#}
+{#        }#}
+{#    </style>#}
+{#	#}
+{#	</head>#}
+{#	#}
+{#	<body>#}
+{#		#}
+{#        <header class="main_header">#}
+{#            <div class="container">#}
+{#                <div class="row">#}
+{#                <div class="col-md-12">#}
+{#                <div class="cm_left_header">#}
+{#					<a href="index.html"><span>Crazy Mar</span></a>#}
+{#				</div>#}
+{#				<div class="nav_main">#}
+{#					<ul class="left-navbar">#}
+{#						<li>#}
+{#							<form method="post" class="search_bar">#}
+{#								<input type="text" placeholder="Search videos, movies, and more" name="keyword" class="form-control">#}
+{#								<span class="search-icon"><i class="fa fa-search"></i></span>#}
+{#							</form>#}
+{#						</li>#}
+{#					</ul>#}
+{#					<ul class="right-navbar">#}
+{#                        #}
+{#						<!--<li>#}
+{#							<a class="login" href="#"><img src="img/user.png"> Sign in</a>#}
+{#						</li>-->#}
+{#						<li class="dropdown hoe-rheader-submenu message-notification left-min-30">#}
+{#							<a href="#" class="dropdown-toggle icon-circle" data-toggle="dropdown" >#}
+{#							<i class="fa fa-bell-o"></i>#}
+{#							<span class="badge badge-success">6</span>#}
+{#							</a>#}
+{#							<ul class="dropdown-menu ">#}
+{#								<li class="hoe-submenu-label">#}
+{#									<h3><span class="bold">Notification</span></h3>#}
+{#								</li>#}
+{#								<li>#}
+{#									<a href="#" class="clearfix"> #}
+{#									<span class="notification-title">Database overload- Sav3090</span>#}
+{#									<span class="notification-ago  ">3 min ago</span>#}
+{#									</a>#}
+{#								</li>#}
+{#								<li>#}
+{#									<a href="#" class="clearfix"> #}
+{#									<span class="notification-title">Installing App v1.2.1</span>#}
+{#									<span class="notification-ago  ">3 min ago</span>#}
+{#									</a>#}
+{#								</li>#}
+{#								<li>#}
+{#									<a href="#" class="clearfix"> #}
+{#									<span class="notification-title">Application Error - Sav3085</span>#}
+{#									<span class="notification-ago  ">10 min ago</span>#}
+{#									</a>#}
+{#								</li>#}
+{#								<li>#}
+{#									<a href="#" class="clearfix"> #}
+{#									<span class="notification-title">Server Status - Sav3080</span>#}
+{#									<span class="notification-ago  ">3 min ago</span>#}
+{#									</a>#}
+{#								</li>#}
+{#								<li>#}
+{#									<a href="#" class="clearfix"> #}
+{#									<span class="notification-title">Application Configured</span>#}
+{#									<span class="notification-ago  ">3 min ago</span>#}
+{#									</a>#}
+{#								</li>#}
+{#								<li> #}
+{#									<a href="#" class="clearfix"> #}
+{#									<span class="notification-title">Server Status</span>#}
+{#									<span class="notification-ago  ">3 min ago</span>#}
+{#									</a>#}
+{#								</li>#}
+{#							</ul>#}
+{#						</li>#}
+{#						<li class="dropdown hoe-rheader-submenu message-notification left-min-30">#}
+{#							<a href="#" class="dropdown-toggle" data-toggle="dropdown">#}
+{#								<span><img class="img-circle user_img" src="img/avatar-1.jpg"></span>#}
+{#								<!--<span><b>Laxman Lucky</b> <i class=" fa fa-angle-down"></i></span>-->#}
+{#							</a>#}
+{#							<ul class="dropdown-menu ">#}
+{#								<li class="hoe-submenu-label">#}
+{#									<div class="profile-box">#}
+{#										<div class="media">#}
+{#											<a class="pull-left" href="user-profile.html">#}
+{#											<img class="img-circle" src="img/avatar-1.jpg">#}
+{#											</a>#}
+{#											<div class="media-body">#}
+{#												<h5 class="media-heading">Welcome <span>Lucky</span></h5>#}
+{#												<small>UI Developer</small>#}
+{#											</div>#}
+{#										</div>#}
+{#									</div>#}
+{#								</li>#}
+{#								<li><a href="#"><i class="fa fa-user"></i>My Profile</a></li>#}
+{#								<li><a href="#"><i class="fa fa-cog"></i>Settings</a></li>#}
+{#								<li><a href="#"><i class="fa fa-question-circle"></i>Help</a></li>#}
+{#								<li><a href="#"><i class="fa fa-power-off"></i>Logout</a></li>#}
+{#							</ul>#}
+{#						</li>#}
+{#					</ul>#}
+{#				</div>#}
+{#            </div>#}
+{#            </div>#}
+{#            </div>#}
+{#			</header>#}
+{#        #}
+        {% block content %}
+            {% load staticfiles %}
+        
+            <div class="full_width main_content">
+                
+
+                
+                    <div class="shopping_main">
+                        <div class="home-one"> 
+                            
+                            <nav class="navbar navbar-default navbar-mobile light bootsnav">
+			<div class="container">
+			
+			
+				<div class="collapse navbar-collapse" id="navbar-menu">
+				
+					<ul class="nav navbar-nav navbar-left" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li><a href="{% url 'employee' %}">Home</a></li>
+                        <li><a href="{% url 'employe' %}">Profile</a></li>
+{#                        <li><a href="#">Menu one</a></li>#}
+{#                        <li><a href="#">Menu Two</a></li>#}
+						
+					
+					</ul>
+{#					<ul class="nav navbar-nav navbar-right">#}
+{#                        <li><a href="#">Post your resume</a></li>#}
+{#					#}
+{#					</ul>#}
+						
+				</div>
+			</div>   
+		</nav>
+                
+                            
+                            <div class="full_width fotrm_main">
+                                <div class="container">
+                                    <div class="row">
+					
+					<div class="col-md-8 col-sm-8">
+						
+						<div class="detail-wrapper">
+							<div class="detail-wrapper-body">
+							
+								<div class="text-center mrg-bot-30">
+									<img src="{{ prof.photo.url }}" class="img-circle width-100" alt=""/>
+									<h4 class="meg-0">{{ prof.frist }} {{ prof.second }}</h4>
+									<span>{{ prof.category }}</span>
+								</div>
+								
+								<div class="row">
+									<div class="col-sm-4 mrg-bot-10">
+										<i class="ti-location-pin padd-r-10"></i>{{ prof.city }}
+									</div>
+									<div class="col-sm-4 mrg-bot-10">
+										<i class="ti-email padd-r-10"></i>{{ prof.email }}
+									</div>
+									<div class="col-sm-4 mrg-bot-10">
+										<i class="ti-mobile padd-r-10"></i>{{ prof.phone }}
+									</div>
+									<div class="col-sm-4 mrg-bot-10">
+										<i class="ti-credit-card padd-r-10"></i>{{ prof.expectpa }}
+									</div>
+									<div class="col-sm-4 mrg-bot-10">
+										<i class="ti-shield padd-r-10"></i>{{ prof.experience }}
+									</div>
+									<div class="col-sm-4 mrg-bot-10">{{ prof.skill }}
+{#										<span class="skill-tag">css</span>#}
+{#										<span class="skill-tag">HTML</span>#}
+{#										<span class="skill-tag">Photoshop</span>#}
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						
+						<div class="detail-wrapper">
+							<div class="detail-wrapper-header">
+								<h4>Career</h4>
+							</div>
+							<div class="detail-wrapper-body">
+								<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+								<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+							</div>
+						</div>
+						
+						<div class="detail-wrapper">
+							<div class="detail-wrapper-header">
+								<h4>Education</h4>
+							</div>
+							<div class="detail-wrapper-body">
+							
+								<div class="edu-history info">
+									<i></i>
+									<div class="detail-info">
+										<h3>University</h3>
+										<i>2008 - 2012</i>
+										<span>Middle East Technical University <i>Computer Science</i></span>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+									</div>
+								</div>
+
+								<div class="edu-history danger">
+									<i></i>
+									<div class="detail-info">
+										<h3>Intermediate School</h3>
+										<i>2008 - 2012</i>
+										<span>Middle East Technical University <i>Computer Science</i></span>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+									</div>
+								</div>
+
+								<div class="edu-history success">
+									<i></i>
+									<div class="detail-info">
+										<h3>High School</h3>
+										<i>2008 - 2012</i>
+										<span>Middle East Technical University <i>Computer Science</i></span>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						
+						<div class="detail-wrapper">
+							<div class="detail-wrapper-header">
+								<h4>Work & Experience</h4>
+							</div>
+							<div class="detail-wrapper-body">
+							
+								<div class="edu-history info">
+									<i></i>
+									<div class="detail-info">
+										<h3>Php Developer <span>Infox Studio</span></h3>
+										<i>2008 - 2012</i>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+									</div>
+								</div>
+								
+								<div class="edu-history danger">
+									<i></i>
+									<div class="detail-info">
+										<h3>Java Developer <span>Itare Studio</span></h3>
+										<i>2012 - 2014</i>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+									</div>
+								</div>
+								
+								<div class="edu-history success">
+									<i></i>
+									<div class="detail-info">
+										<h3>CMS Developer <span>Dexlo Studio</span></h3>
+										<i>2014 - 2018</i>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					
+					<!-- Sidebar -->
+					<div class="col-md-4 col-sm-4">
+						<div class="sidebar">
+						
+							<!-- Start: Opening hour -->
+							<div class="widget-boxed">
+                                <form action="{% url 'bookk' %}" method="post" enctype="multipart/form-data">
+                                    {% csrf_token %}
+								<div class="widget-boxed-body">
+
+                                    <input type="hidden" name="user" value="{{ request.user.id }}">
+                                    <input type="hidden" name="resume" value="{{ prof.id }}">
+                                    {% if book.id %}
+                                    <input type="button"  class="btn btn-m light-gray-btn full-width" value="Bookmarked" disabled>
+                                    {% else %}
+                                     <input type="submit"  class="btn btn-m light-gray-btn full-width" value="Bookmark" >
+                                    {% endif %}
+{#									<a href="#" class="btn btn-m theme-btn full-width mrg-bot-10"><i class="ti-heart"></i>Bookmark This</a>#}
+{#									<a href="#" class="btn btn-m light-gray-btn full-width"><i class="ti-check"></i>Shortlist Resume</a>#}
+								</div>
+                                    </form>
+							</div>
+                        <div class="widget-boxed">
+                                <form action="{% url 'shortt1' %}" method="post" enctype="multipart/form-data">
+                                    {% csrf_token %}
+								<div class="widget-boxed-body">
+
+                                    <input type="hidden" name="userlist" value="{{ request.user.id }}">
+                                    <input type="hidden" name="resumelist" value="{{ prof.id }}">
+                                    {% if shortlist.id %}
+                                    <input type="button"  class="btn btn-m light-gray-btn full-width" value="Shortlisted" disabled>
+                                    {% else %}
+                                        <input type="submit"  class="btn btn-m light-gray-btn full-width" value="Shortlist Resume" >
+                                    {% endif %}
+{#									<a href="#" class="btn btn-m theme-btn full-width mrg-bot-10"><i class="ti-heart"></i>Bookmark This</a>#}
+{#									<a href="#" class="btn btn-m light-gray-btn full-width"><i class="ti-check"></i>Shortlist Resume</a>#}
+								</div>
+                                    </form>
+							</div>
+							<!-- End: Opening hour -->
+							
+							<!-- Start: Job Overview -->
+							<div class="widget-boxed">
+								<div class="widget-boxed-header">
+									<h4><i class="ti-location-pin padd-r-10"></i>Location</h4>
+								</div>
+								<div class="widget-boxed-body">
+									<div class="side-list no-border">
+										<ul>
+											<li><i class="ti-credit-card padd-r-10"></i>Package: 20K To 50K/Month</li>
+											<li><i class="ti-world padd-r-10"></i>https://www.jobhill.com</li>
+											<li><i class="ti-mobile padd-r-10"></i>91 234 567 8765</li>
+											<li><i class="ti-email padd-r-10"></i>suppoer@listinghub.com</li>
+											<li><i class="ti-pencil-alt padd-r-10"></i>Bachelor Degree</li>
+											<li><i class="ti-shield padd-r-10"></i>3 Year Exp.</li>
+										</ul>
+										<h5>Share Job</h5>
+										<ul class="side-list-inline no-border social-side">
+											<li><a href="#"><i class="fa fa-facebook theme-cl"></i></a></li>
+											<li><a href="#"><i class="fa fa-google-plus theme-cl"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter theme-cl"></i></a></li>
+											<li><a href="#"><i class="fa fa-linkedin theme-cl"></i></a></li>
+											<li><a href="#"><i class="fa fa-pinterest theme-cl"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- End: Job Overview -->
+							
+							<!-- Start: Opening hour -->
+							<div class="widget-boxed">
+								<div class="widget-boxed-header">
+									<h4><i class="ti-headphone padd-r-10"></i>Contact Now</h4>
+								</div>
+								<div class="widget-boxed-body">
+									<form>
+										<input type="text" class="form-control" placeholder="Enter your Name *">
+										<input type="text" class="form-control" placeholder="Email Address*">
+										<input type="text" class="form-control" placeholder="Phone Number">
+										<textarea class="form-control height-140" placeholder="Message should have more than 50 characters"></textarea>
+										<button class="btn theme-btn full-width">Send Email</button>
+										<span>You accepts our <a href="#" title="">Terms and Conditions</a></span>
+									</form>
+								</div>
+							</div>
+							 
+						</div>
+						
+					</div>
+					
+				</div>
+                                </div>
+
+                            </div>
+                            {% endblock %}
+                            
+{#		<footer class="dark-bg footer">#}
+{#			<div class="">#}
+{#				#}
+{#				<!-- Row Start -->#}
+{#				<div class="row">#}
+{#				#}
+{#					<div class="col-md-12 col-sm-12">#}
+{#						<div class="row">#}
+{#							<div class="col-md-3 col-sm-3">#}
+{#								<h4>Featured Job</h4>#}
+{#								<ul>#}
+{#									<li><a href="#">Browse Jobs</a></li>#}
+{#									<li><a href="#">Premium MBA Jobs</a></li>#}
+{#									<li><a href="#">Access Database</a></li>#}
+{#									<li><a href="#">Manage Responses</a></li>#}
+{#									<li><a href="#">Report a Problem</a></li>#}
+{#									<li><a href="#">Mobile Site</a></li>#}
+{#								</ul>#}
+{#							</div>#}
+{#							<div class="col-md-3 col-sm-3">#}
+{#								<h4>Featured Job</h4>#}
+{#								<ul>#}
+{#									<li><a href="#">Browse Jobs</a></li>#}
+{#									<li><a href="#">Premium MBA Jobs</a></li>#}
+{#									<li><a href="#">Access Database</a></li>#}
+{#									<li><a href="#">Manage Responses</a></li>#}
+{#									<li><a href="#">Report a Problem</a></li>#}
+{#									<li><a href="#">Mobile Site</a></li>#}
+{#								</ul>#}
+{#							</div>#}
+{#							<div class="col-md-3 col-sm-3">#}
+{#								<h4>Featured Job</h4>#}
+{#								<ul>#}
+{#									<li><a href="#">Browse Jobs</a></li>#}
+{#									<li><a href="#">Premium MBA Jobs</a></li>#}
+{#									<li><a href="#">Access Database</a></li>#}
+{#									<li><a href="#">Manage Responses</a></li>#}
+{#									<li><a href="#">Report a Problem</a></li>#}
+{#									<li><a href="#">Mobile Site</a></li>#}
+{#								</ul>#}
+{#							</div>#}
+{#                            #}
+{#                            <div class="col-md-3 col-sm-3">#}
+{#								<h4>Featured Job</h4>#}
+{#								<ul>#}
+{#									<li><a href="#">Browse Jobs</a></li>#}
+{#									<li><a href="#">Premium MBA Jobs</a></li>#}
+{#									<li><a href="#">Access Database</a></li>#}
+{#									<li><a href="#">Manage Responses</a></li>#}
+{#									<li><a href="#">Report a Problem</a></li>#}
+{#									<li><a href="#">Mobile Site</a></li>#}
+{#								</ul>#}
+{#							</div>#}
+{#						</div>#}
+{#					</div>#}
+{#					#}
+{#					#}
+{#					#}
+{#				</div>#}
+{#				#}
+{#				#}
+{#			</div>#}
+{#		</footer>#}
+{#		#}
+{#		<!-- Apply Job Popup -->#}
+{#		<div class="modal fade" id="apply-job" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">#}
+{#			<div class="modal-dialog">#}
+{#				<div class="modal-content" id="myModalLabel2">#}
+{#					<div class="modal-body">#}
+{#						<div class="text-center">#}
+{#							<h4 class="mrg-0">Front End Designer</h4>#}
+{#							<span> 2708 Scenic Way, Sutter</span>#}
+{#						</div>#}
+{#						#}
+{#						<form>#}
+{##}
+{#							<div class="form-group">#}
+{#								<label>Name</label>#}
+{#								<input type="text" class="form-control" placeholder="Name">#}
+{#							</div>#}
+{##}
+{#							<div class="form-group">#}
+{#								<label>Email</label>#}
+{#								<input type="email" class="form-control" placeholder="Email">#}
+{#							</div>#}
+{#					#}
+{##}
+{#							<div class="form-group">#}
+{#								<label>Phone</label>#}
+{#								<input type="text" class="form-control" placeholder="Phone">#}
+{#							</div>#}
+{##}
+{#							<div class="form-group">#}
+{#								<label>Upload CV</label>#}
+{#								<div class="custom-file-upload">#}
+{#									<input type="file" id="file" name="myfiles[]" multiple />#}
+{#								</div>#}
+{#							</div>#}
+{#					#}
+{#							<div class="form-group">#}
+{#								<textarea class="form-control height-120" placeholder="Pase CV"></textarea>#}
+{#							</div>#}
+{##}
+{#							<div class="form-group text-center">#}
+{#								<button type="button" class="btn theme-btn btn-m">Save & Apply</button>#}
+{#							</div>#}
+{#							#}
+{#						</form>#}
+{#							#}
+{#					</div>#}
+{#				</div>#}
+{#			</div>#}
+{#		</div>   #}
+{#		<!-- Apply Job Popup -->#}
+{#		#}
+{#		<!-- Sign Up Window Code -->#}
+{#		<div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">#}
+{#			<div class="modal-dialog">#}
+{#				<div class="modal-content" id="myModalLabel1">#}
+{#					<div class="modal-body">#}
+{#						<div class="text-center"><img src="assets/img/logo.png" class="img-responsive" alt=""></div>#}
+{#						#}
+{#						<!-- Nav tabs -->#}
+{#						<ul class="nav nav-tabs nav-advance theme-bg" role="tablist">#}
+{#							<li class="nav-item active">#}
+{#								<a class="nav-link" data-toggle="tab" href="#employer" role="tab">#}
+{#								<i class="ti-user"></i> Employer</a>#}
+{#							</li>#}
+{#							<li class="nav-item">#}
+{#								<a class="nav-link" data-toggle="tab" href="#candidate" role="tab">#}
+{#								<i class="ti-user"></i> Candidate</a>#}
+{#							</li>#}
+{#						</ul>#}
+{#						<!-- Nav tabs -->#}
+{#							#}
+{#						<!-- Tab panels -->#}
+{#						<div class="tab-content">#}
+{#						#}
+{#							<!-- Employer Panel 1-->#}
+{#							<div class="tab-pane fade in show active" id="employer" role="tabpanel">#}
+{#								<form>#}
+{#									#}
+{#									<div class="form-group">#}
+{#										<label>User Name</label>#}
+{#										<input type="text" class="form-control" placeholder="User Name">#}
+{#									</div>#}
+{#									#}
+{#									<div class="form-group">#}
+{#										<label>Password</label>#}
+{#										<input type="password" class="form-control" placeholder="*********">#}
+{#									</div>#}
+{#									#}
+{#									<div class="form-group">#}
+{#										<span class="custom-checkbox">#}
+{#											<input type="checkbox" id="4">#}
+{#											<label for="4"></label>Remember me#}
+{#										</span>#}
+{#										<a href="#" title="Forget" class="fl-right">Forgot Password?</a>#}
+{#									</div>#}
+{#									<div class="form-group text-center">#}
+{#										<button type="button" class="btn theme-btn full-width btn-m">LogIn </button>#}
+{#									</div>#}
+{#									#}
+{#								</form>#}
+{#								#}
+{#								<div class="log-option"><span>OR</span></div>#}
+{#								#}
+{#								<div class="row mrg-bot-20">#}
+{#									<div class="col-md-6">#}
+{#										<a href="#" title="" class="fb-log-btn log-btn"><i class="fa fa-facebook"></i>Sign In With Facebook</a>#}
+{#									</div>#}
+{#									<div class="col-md-6">#}
+{#										<a href="#" title="" class="gplus-log-btn log-btn"><i class="fa fa-google-plus"></i>Sign In With Google+</a>#}
+{#									</div>#}
+{#								</div>#}
+{#					#}
+{#							</div>#}
+{#							<!--/.Panel 1-->#}
+{#							#}
+{#							<!-- Candidate Panel 2-->#}
+{#							<div class="tab-pane fade" id="candidate" role="tabpanel">#}
+{#								<form>#}
+{#									#}
+{#									<div class="form-group">#}
+{#										<label>User Name</label>#}
+{#										<input type="text" class="form-control" placeholder="User Name">#}
+{#									</div>#}
+{#									#}
+{#									<div class="form-group">#}
+{#										<label>Password</label>#}
+{#										<input type="password" class="form-control" placeholder="*********">#}
+{#									</div>#}
+{#									#}
+{#									<div class="form-group">#}
+{#										<span class="custom-checkbox">#}
+{#											<input type="checkbox" id="44">#}
+{#											<label for="44"></label>Remember me#}
+{#										</span>#}
+{#										<a href="#" title="Forget" class="fl-right">Forgot Password?</a>#}
+{#									</div>#}
+{#									<div class="form-group text-center">#}
+{#										<button type="button" class="btn theme-btn full-width btn-m">LogIn </button>#}
+{#									</div>#}
+{#									#}
+{#								</form>#}
+{#								#}
+{#								<div class="log-option"><span>OR</span></div>#}
+{#								#}
+{#								<div class="row mrg-bot-20">#}
+{#									<div class="col-md-6">#}
+{#										<a href="#" title="" class="fb-log-btn log-btn"><i class="fa fa-facebook"></i>Sign In With Facebook</a>#}
+{#									</div>#}
+{#									<div class="col-md-6">#}
+{#										<a href="#" title="" class="gplus-log-btn log-btn"><i class="fa fa-google-plus"></i>Sign In With Google+</a>#}
+{#									</div>#}
+{#								</div>#}
+{#								#}
+{#							</div>#}
+{#							<!--/.Panel 2-->#}
+{#							#}
+{#						</div>#}
+{#						<!-- Tab panels -->#}
+{#					</div>#}
+{#				</div>#}
+{#			</div>#}
+{#		</div>   #}
+{#    #}
+{#                        </div>#}
+{#                    </div>#}
+{#			</div>#}
+{#        #}
+{#		#}
+{#<script src="assets/js/jquery.min.js"></script>#}
+{#		#}
+{#		<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>#}
+{#		#}
+{#		<script src="assets/plugins/bootstrap/js/bootsnav.js"></script>#}
+{#		<script src="assets/js/viewportchecker.js"></script>#}
+{#		#}
+{#		<script src="assets/plugins/slick-slider/slick.js"></script>#}
+{#		<script src="assets/plugins/bootstrap/js/wysihtml5-0.3.0.js"></script>#}
+{#		<script src="assets/plugins/bootstrap/js/bootstrap-wysihtml5.js"></script>#}
+{#		<script src="assets/plugins/aos-master/aos.js"></script>#}
+{#		<script src="assets/plugins/date-dropper/datedropper.js"></script>#}
+{#		<script src="assets/plugins/nice-select/js/jquery.nice-select.min.js"></script>#}
+{#		<script src="assets/js/custom.js"></script>#}
+{#		#}
+{#		<script>#}
+{#		$('#myTab a').click(function (e) {#}
+{#			e.preventDefault()#}
+{#			$(this).tab('show')#}
+{#		})#}
+{#		</script>#}
+{#		#}
+{#		<script>#}
+{#			$('#reservation-date').dateDropper();#}
+{#		</script>#}
+{#		#}
+{#		<script>#}
+{#			$('#date-from').dateDropper();#}
+{#		</script>#}
+{#		#}
+{#		<script>#}
+{#			$('#date-to').dateDropper();#}
+{#		</script>#}
+{#		#}
+{#		<script>#}
+{#			$('#e-date-from').dateDropper();#}
+{#		</script>#}
+{#		#}
+{#		<script>#}
+{#			$('#e-date-to').dateDropper();#}
+{#		</script>#}
+{#		#}
+{#		<script>#}
+{#			AOS.init();#}
+{#		</script>#}
+{#		#}
+{#    </body>#}
+{##}
+{#</html>#}           

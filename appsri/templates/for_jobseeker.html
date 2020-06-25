@@ -1,0 +1,811 @@
+{% extends 'data.html' %}
+{#<html class="no-js" lang="zxx">#}
+{##}
+{#<head>#}
+{#	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">#}
+{#	<meta http-equiv="X-UA-Compatible" content="IE=edge">#}
+{#	<meta name="viewport" content="width=device-width, initial-scale=1.0">#}
+{#	<meta name="description" content="">#}
+{#	<meta name="keywords" content="">#}
+{#	<meta name="robots" content="index,follow">#}
+{##}
+{#    <title>Crazy Mar - Job Portal</title>#}
+{##}
+{#	<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">#}
+{#	<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap-select.min.css">#}
+{#    <link href="assets/plugins/icons/css/icons.css" rel="stylesheet">#}
+{#	<link rel="stylesheet" href="assets/plugins/nice-select/css/nice-select.css">#}
+{#    <link href="assets/css/style.css" rel="stylesheet">#}
+{#	<link href="assets/css/responsiveness.css" rel="stylesheet">#}
+{#    <link href="assets/css/skin/default.css" rel="stylesheet">#}
+{#    <link href="assets/css/main.css" rel="stylesheet">#}
+{#	#}
+{#    #}
+{#    <style>#}
+{#        body, section {#}
+{#    background: #f1f1f1;#}
+{#}#}
+{#    </style>#}
+{#	</head>#}
+{#	#}
+{#	<body>#}
+{#		#}
+{#        <header class="main_header">#}
+{#            <div class="container">#}
+{#                <div class="row">#}
+{#                <div class="col-md-12">#}
+{#                <div class="cm_left_header">#}
+{#					<a href="index.html"><span>Crazy Mar</span></a>#}
+{#				</div>#}
+{#				<div class="nav_main">#}
+{#					<ul class="left-navbar">#}
+{#						<li>#}
+{#							<form method="post" class="search_bar">#}
+{#								<input type="text" placeholder="Search videos, movies, and more" name="keyword" class="form-control">#}
+{#								<span class="search-icon"><i class="fa fa-search"></i></span>#}
+{#							</form>#}
+{#						</li>#}
+{#					</ul>#}
+{#					<ul class="right-navbar">#}
+{#                        #}
+{#						<!--<li>#}
+{#							<a class="login" href="#"><img src="img/user.png"> Sign in</a>#}
+{#						</li>-->#}
+{#						<li class="dropdown hoe-rheader-submenu message-notification left-min-30">#}
+{#							<a href="#" class="dropdown-toggle icon-circle" data-toggle="dropdown" >#}
+{#							<i class="fa fa-bell-o"></i>#}
+{#							<span class="badge badge-success">6</span>#}
+{#							</a>#}
+{#							<ul class="dropdown-menu ">#}
+{#								<li class="hoe-submenu-label">#}
+{#									<h3><span class="bold">Notification</span></h3>#}
+{#								</li>#}
+{#								<li>#}
+{#									<a href="#" class="clearfix"> #}
+{#									<span class="notification-title">Database overload- Sav3090</span>#}
+{#									<span class="notification-ago  ">3 min ago</span>#}
+{#									</a>#}
+{#								</li>#}
+{#								<li>#}
+{#									<a href="#" class="clearfix"> #}
+{#									<span class="notification-title">Installing App v1.2.1</span>#}
+{#									<span class="notification-ago  ">3 min ago</span>#}
+{#									</a>#}
+{#								</li>#}
+{#								<li>#}
+{#									<a href="#" class="clearfix"> #}
+{#									<span class="notification-title">Application Error - Sav3085</span>#}
+{#									<span class="notification-ago  ">10 min ago</span>#}
+{#									</a>#}
+{#								</li>#}
+{#								<li>#}
+{#									<a href="#" class="clearfix"> #}
+{#									<span class="notification-title">Server Status - Sav3080</span>#}
+{#									<span class="notification-ago  ">3 min ago</span>#}
+{#									</a>#}
+{#								</li>#}
+{#								<li>#}
+{#									<a href="#" class="clearfix"> #}
+{#									<span class="notification-title">Application Configured</span>#}
+{#									<span class="notification-ago  ">3 min ago</span>#}
+{#									</a>#}
+{#								</li>#}
+{#								<li> #}
+{#									<a href="#" class="clearfix"> #}
+{#									<span class="notification-title">Server Status</span>#}
+{#									<span class="notification-ago  ">3 min ago</span>#}
+{#									</a>#}
+{#								</li>#}
+{#							</ul>#}
+{#						</li>#}
+{#						<li class="dropdown hoe-rheader-submenu message-notification left-min-30">#}
+{#							<a href="#" class="dropdown-toggle" data-toggle="dropdown">#}
+{#								<span><img class="img-circle user_img" src="img/avatar-1.jpg"></span>#}
+{#								<!--<span><b>Laxman Lucky</b> <i class=" fa fa-angle-down"></i></span>-->#}
+{#							</a>#}
+{#							<ul class="dropdown-menu ">#}
+{#								<li class="hoe-submenu-label">#}
+{#									<div class="profile-box">#}
+{#										<div class="media">#}
+{#											<a class="pull-left" href="user-profile.html">#}
+{#											<img class="img-circle" src="img/avatar-1.jpg">#}
+{#											</a>#}
+{#											<div class="media-body">#}
+{#												<h5 class="media-heading">Welcome <span>Lucky</span></h5>#}
+{#												<small>UI Developer</small>#}
+{#											</div>#}
+{#										</div>#}
+{#									</div>#}
+{#								</li>#}
+{#								<li><a href="#"><i class="fa fa-user"></i>My Profile</a></li>#}
+{#								<li><a href="#"><i class="fa fa-cog"></i>Settings</a></li>#}
+{#								<li><a href="#"><i class="fa fa-question-circle"></i>Help</a></li>#}
+{#								<li><a href="#"><i class="fa fa-power-off"></i>Logout</a></li>#}
+{#							</ul>#}
+{#						</li>#}
+{#					</ul>#}
+{#				</div>#}
+{#            </div>#}
+{#            </div>#}
+{#            </div>#}
+{#			</header>#}
+        
+        {% block content %}
+            {% load staticfiles %}
+        
+            <div class="full_width main_content">
+               
+                
+                    <div class="shopping_main">
+                        <div class="home-one"> 
+                            
+                            <nav class="navbar navbar-default navbar-mobile light bootsnav">
+			<div class="container">
+			
+			
+				<div class="collapse navbar-collapse" id="navbar-menu">
+				
+					<ul class="nav navbar-nav navbar-left" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li><a href="{% url 'employee' %}">Home</a></li>
+                        <li><a href="{% url 'jobseker' %}">Profile</a></li>
+                        <li><a href="{% url 'interest1' %}">Interested Jobs</a></li>
+{#                        <li><a href="#">Menu Two</a></li>#}
+{#						#}
+					
+					</ul>
+					
+					<ul class="nav navbar-nav navbar-right">
+                        <li><a href="{% url 'resumee' %}">Register Now</a></li>
+						
+					</ul>
+						
+				</div>
+			</div>   
+		</nav>
+                            
+                            <div class="main-banner" style="background-image:url({% static 'assets/img/slider-2.jpg' %});">
+			<div class="container">
+				<div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+				
+					<form action="{% url 'jobseker' %}" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+						<fieldset class="home-form-1 icon-field">
+						
+							<div class="col-md-4 col-sm-4 padd-0">
+								<div class="form-group">
+									<div class="icon-addon addon-lg">
+										<input type="text" class="form-control br-1" placeholder="Skills, Designation, Companies" name="skills"/>
+										<label class="fa fa-pencil"></label>
+									</div>
+								</div>
+								
+							</div>
+								
+							<div class="col-md-3 col-sm-3 padd-0">
+								<div class="form-group">
+									<div class="icon-addon addon-lg">
+{#                                        <div class="col-sm-4">#}
+
+									<input type="text" class="form-control" placeholder="job title"  name="jobtitle">
+                                        <label class="fa fa-pencil"></label>
+{#								</div>#}
+{#										<select class="wide form-control br-1">#}
+{#											<option data-display="Location">All Country</option>#}
+{#											<option value="1">Allahabad</option>#}
+{#											<option value="2">India</option>#}
+{#											<option value="3" disabled>Australia</option>#}
+{#											<option value="4">United State</option>#}
+{#										</select>#}
+{#										<label class="fa fa-map-marker"></label>#}
+									</div>
+								</div>
+							</div>
+								
+							<div class="col-md-3 col-sm-3 padd-0">
+								<div class="form-group">
+									<div class="icon-addon addon-lg">
+										<select class="wide form-control">
+                                        <option value="">select</option>
+                                            {% for x in key %}
+                                        <option value="{{ x.id }}" >{{ x.exp }}</option>
+                                        {% endfor %}
+{#											<option data-display="Experience">Show All</option>#}
+{#											<option value="1">1</option>#}
+{#											<option value="2">2</option>#}
+{#											<option value="3" disabled>3</option>#}
+{#											<option value="4">4</option>#}
+										</select>
+										<label class="fa fa-crosshairs"></label>
+									</div>
+								</div>
+							</div>
+								
+							<div class="col-md-2 col-sm-2 padd-0">
+								<button type="submit" class="btn theme-btn cl-white seub-btn">FIND JOB</button>
+							</div>
+								
+						</fieldset>
+					</form>
+					
+					<div class="text-center">
+						<!--<div class="choose-opt">
+							<div class="choose-opt-box"><span>OR</span></div>
+						</div>-->
+						<a href="{% url 'jobseker' %}" class="btn theme-btn btn-m mrg-5">For Job Seeker</a>
+{#						<a href="#" class="btn btn-hiring btn-m mrg-5">For Employer</a>#}
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+                            
+                            
+         <section class="catehpru_choose">
+			<div class="container">
+
+				<div class="" data-aos="fade-up">
+					<div class="col-md-12">
+						<div class="heading">
+							<h3>Choose Category</h3>
+						</div>
+					</div>
+				</div>
+				
+				<div class="">
+					 {% for x in key4 %}
+					<div class="col-md-2 col-sm-2">
+                        <a href="{% url 'filters' x.id %}">
+                            <div class="features-box">
+                                <img src="{{ x.catee.url }}">
+                                <h4>{{ x.cate }}</h4>
+                            </div>
+                        </a>
+					</div>
+                    {% endfor %}
+
+{#					<div class="col-md-2 col-sm-2">#}
+{#                        <a href="browse_jobseeker.html">#}
+{#                            <div class="features-box">#}
+{#                                <img src="{% static 'img/icons/2.jpg' %}">#}
+{#                                <h4>BPO/  Telecaller</h4>#}
+{#                            </div>#}
+{#                        </a>#}
+{#					</div>#}
+{#					#}
+{#					<div class="col-md-2 col-sm-2">#}
+{#                        <a href="browse_jobseeker.html">#}
+{#                            <div class="features-box">#}
+{#                                <img src="{% static 'img/icons/3.jpg' %}">#}
+{#                                <h4>Cashier</h4>#}
+{#                            </div>#}
+{#                        </a>#}
+{#					</div>#}
+{#                    #}
+{#                    <div class="col-md-2 col-sm-2">#}
+{#                        <a href="browse_jobseeker.html">#}
+{#                            <div class="features-box">#}
+{#                                <img src="{% static 'img/icons/4.jpg' %}">#}
+{#                                <h4>Cook</h4>#}
+{#                            </div>#}
+{#                        </a>#}
+{#					</div>#}
+{#                    #}
+{#                    <div class="col-md-2 col-sm-2">#}
+{#                        <a href="browse_jobseeker.html">#}
+{#                            <div style="padding: 14px 20px;" class="features-box">#}
+{#                                <img src="{% static 'img/icons/5.jpg' %}">#}
+{#                                <h4>Data Entry / Back Office</h4>#}
+{#                            </div>#}
+{#                        </a>#}
+{#					</div>#}
+{#                    #}
+{#                    <div class="col-md-2 col-sm-2">#}
+{#                        <a href="browse_jobseeker.html">#}
+{#                            <div style="padding: 14px 20px;" class="features-box">#}
+{#                                <img src="{% static 'img/icons/6.jpg' %}">#}
+{#                                <h4>Delivery/ Collections</h4>#}
+{#                            </div>#}
+{#                        </a>#}
+{#					</div>#}
+{#                    #}
+{#                    <div class="col-md-2 col-sm-2">#}
+{#                        <a href="browse_jobseeker.html">#}
+{#                            <div class="features-box">#}
+{#                                <img src="{% static 'img/icons/7.jpg' %}">#}
+{#                                <h4>Driver</h4>#}
+{#                            </div>#}
+{#                        </a>#}
+{#					</div>#}
+{#					#}
+{#					<div class="col-md-2 col-sm-2">#}
+{#                        <a href="browse_jobseeker.html">#}
+{#                            <div style="padding: 14px 20px;" class="features-box">#}
+{#                                <img src="{% static 'img/icons/8.jpg' %}">#}
+{#                                <h4>Hospitality Executive</h4>#}
+{#                            </div>#}
+{#                        </a>#}
+{#					</div>#}
+{#					#}
+{#					<div class="col-md-2 col-sm-2">#}
+{#                        <a href="browse_jobseeker.html">#}
+{#                            <div class="features-box">#}
+{#                                <img src="{% static 'img/icons/9.jpg' %}">#}
+{#                                <h4>HR/Admin</h4>#}
+{#                            </div>#}
+{#                        </a>#}
+{#					</div>#}
+{#                    #}
+{#                    <div class="col-md-2 col-sm-2">#}
+{#                        <a href="browse_jobseeker.html">#}
+{#                            <div style="padding: 14px 20px;" class="features-box">#}
+{#                                <img src="{% static 'img/icons/10.jpg' %}">#}
+{#                                <h4>IT Hardware Engineer</h4>#}
+{#                            </div>#}
+{#                        </a>#}
+{#					</div>#}
+{#                    #}
+{#                    <div class="col-md-2 col-sm-2">#}
+{#                        <a href="browse_jobseeker.html">#}
+{#                            <div style="padding: 14px 20px;" class="features-box">#}
+{#                                <img src="{% static 'img/icons/11.jpg' %}">#}
+{#                                <h4>IT Software - Developer</h4>#}
+{#                            </div>#}
+{#                        </a>#}
+{#					</div>#}
+{#                    #}
+{#                    <div class="col-md-2 col-sm-2">#}
+{#                        <a href="browse_jobseeker.html">#}
+{#                            <div class="features-box">#}
+{#                                <img src="{% static 'img/icons/12.jpg' %}">#}
+{#                                <h4>Marketing</h4>#}
+{#                            </div>#}
+{#                        </a>#}
+{#					</div>#}
+{#                    #}
+{#                    <div class="col-md-2 col-sm-2">#}
+{#                        <a href="browse_jobseeker.html">#}
+{#                            <div class="features-box">#}
+{#                                <img src="{% static 'img/icons/13.jpg' %}">#}
+{#                                <h4>Nurse</h4>#}
+{#                            </div>#}
+{#                        </a>#}
+{#					</div>#}
+{#					#}
+{#					<div class="col-md-2 col-sm-2">#}
+{#                        <a href="browse_jobseeker.html">#}
+{#                            <div style="padding: 14px 20px;" class="features-box">#}
+{#                                <img src="{% static 'img/icons/14.jpg' %}">#}
+{#                                <h4>Office Assistant/ Helper</h4>#}
+{#                            </div>#}
+{#                        </a>#}
+{#					</div>#}
+{#					#}
+{#					<div class="col-md-2 col-sm-2">#}
+{#                        <a href="browse_jobseeker.html">#}
+{#                            <div style="padding: 14px 20px;" class="features-box">#}
+{#                                <img src="{% static 'img/icons/15.jpg' %}">#}
+{#                                <h4>Receptionist/ Front Office</h4>#}
+{#                            </div>#}
+{#                        </a>#}
+{#					</div>#}
+{#                    #}
+{#                    <div class="col-md-2 col-sm-2">#}
+{#                        <a href="browse_jobseeker.html">#}
+{#                            <div class="atures-box">#}
+{#                                <img src="{% static 'img/icons/16.jpg' %}">#}
+{#                                <h4>Sales</h4>#}
+{#                            </div>#}
+{#                        </a>#}
+{#					</div>#}
+{#                    #}
+{#                    <div class="col-md-2 col-sm-2">#}
+{#                        <a href="browse_jobseeker.html">#}
+{#                            <div class="features-box">#}
+{#                                <img src="{% static 'img/icons/17.jpg' %}">#}
+{#                                <h4>Teacher</h4>#}
+{#                            </div>#}
+{#                        </a>#}
+{#					</div>#}
+{#                    #}
+{#                    <div class="col-md-2 col-sm-2">#}
+{#                        <a href="browse_jobseeker.html">#}
+{#                            <div style="padding: 14px 20px;" class="features-box">#}
+{#                                <img src="{% static 'img/icons/18.jpg' %}">#}
+{#                                <h4>Warehouse Executive</h4>#}
+{#                            </div>#}
+{#                        </a>#}
+{#					</div>#}
+{#                    #}
+                    <div style="text-align: center;" class="col-md-12">
+                        <a href="#" class="btn btn-hiring btn-m mrg-5 cust_btn">Show all categories</a>
+                    </div>
+                    
+					
+				</div>
+				
+			</div>
+		</section>
+                            
+{#                            <section class="gray-bg catehpru_choose catehpru_choose2">#}
+{#                                <div class="row" data-aos="fade-up">#}
+{#					<div class="col-md-12">#}
+{#						<div class="heading">#}
+{#							<h3>Choose a job type</h3>#}
+{#						</div>#}
+{#					</div>#}
+{#				</div>#}
+{#				<div class="">#}
+{#                    <div class="col-md-15 col-sm-3">#}
+{#                        <div class="grid-job-widget">#}
+{##}
+{#                            <div class="u-content">#}
+{#                                <div class="avatar box-80">#}
+{#                                    <a href="browse_jobseeker.html">#}
+{#                                        <img class="img-responsive" src="{% static 'assets/img/c-1.png' %}" alt="">#}
+{#                                    </a>#}
+{#                                </div>#}
+{#                                <h5><a href="browse_jobseeker.html">Work from home</a></h5>#}
+{#                            </div>#}
+{##}
+{#                            <div class="job-type-grid">#}
+{#                                <a href="browse_jobseeker.html" class="btn job-browse-btn btn-radius br-light">Open Now</a>#}
+{#                            </div>#}
+{##}
+{#                        </div>#}
+{#                    </div>#}
+{#  #}
+{#                      <div class="col-md-15 col-sm-3">#}
+{#                            <div class="grid-job-widget">#}
+
+{#                            <div class="u-content"> #}
+            <section class="gray-bg catehpru_choose catehpru_choose2">
+                                <div class="row" data-aos="fade-up">
+					<div class="col-md-12">
+						<div class="heading">
+							<h3>Choose a job type</h3>
+						</div>
+					</div>
+				</div>
+				<div class="">
+                    {% for x in key5 %}
+                    <div class="col-md-15 col-sm-3">
+                        <div class="grid-job-widget">
+
+                            <div class="u-content">
+                                <div class="avatar box-80">
+                                    <a href="{% url 'job_filter' x.id %}">
+                                        <img class="img-responsive" src="{{ x.jobtt.url }}" alt="">
+                                    </a>
+                                </div>
+                                <h5><a href="browse_jobseeker.html">{{ x.jobtype }}</a></h5>
+                            </div>
+
+{#                            <div class="job-type-grid">#}
+{#                                <a href="browse_jobseeker.html" class="btn job-browse-btn btn-radius br-light">Open Now</a>#}
+{#                            </div>#}
+{##}
+{#                        </div>#}
+{#                    </div>#}
+{##}
+{#                      <div class="col-md-15 col-sm-3">#}
+{#                            <div class="grid-job-widget">#}
+{##}
+{#                            <div class="u-content">#}
+{#                                <div class="avatar box-80">#}
+{#                                    <a href="browse_jobseeker.html">#}
+{#                                        <img class="img-responsive" src="{% static 'assets/img/c-8.png' %}" alt="">#}
+{#                                    </a>#}
+{#                                </div>#}
+{#                                <h5><a href="browse_jobseeker.html">Internship</a></h5>#}
+{#                            </div>#}
+{##}
+{#                            <div class="job-type-grid">#}
+{#                                <a href="browse_jobseeker.html" class="btn job-browse-btn btn-radius br-light">Open Now</a>#}
+{#                            </div>#}
+{##}
+{#                        </div>#}
+{#                        </div>#}
+{#                      <div class="col-md-15 col-sm-3">#}
+{#                        <div class="grid-job-widget">#}
+{#                            <div class="u-content">#}
+{#                                <div class="avatar box-80">#}
+{#                                    <a href="browse_jobseeker.html">#}
+{#                                        <img class="img-responsive" src="{% static 'assets/img/c-3.png' %}" alt="">#}
+{#                                    </a>#}
+{#                                </div>#}
+{#                                <h5><a href="browse_jobseeker.html">Part time</a></h5>#}
+{#                            </div>#}
+{##}
+{#                            <div class="job-type-grid">#}
+{#                                <a href="browse_jobseeker.html" class="btn job-browse-btn btn-radius br-light">Open Now</a>#}
+{#                            </div>#}
+{##}
+{#                        </div>#}
+{#                        </div>#}
+{#                      <div class="col-md-15 col-sm-3">#}
+{#                        <div class="grid-job-widget">#}
+{#                            <div class="u-content">#}
+{#                                <div class="avatar box-80">#}
+{#                                    <a href="browse_jobseeker.html">#}
+{#                                        <img class="img-responsive" src="{% static 'assets/img/c-7.png' %}" alt="">#}
+{#                                    </a>#}
+{#                                </div>#}
+{#                                <h5><a href="browse_jobseeker.html">Full time</a></h5>#}
+{#                            </div>#}
+{##}
+{#                            <div class="job-type-grid">#}
+{#                                <a href="browse_jobseeker.html" class="btn job-browse-btn btn-radius br-light">Open Now</a>#}
+{#                            </div>#}
+{##}
+{#                        </div>#}
+{#                        </div>#}
+{##}
+{#                      <div class="col-md-15 col-sm-3">#}
+{#                        <div class="grid-job-widget">#}
+{#                            <div class="u-content">#}
+{#                                <div class="avatar box-80">#}
+{#                                    <a href="browse_jobseeker.html">#}
+{#                                        <img class="img-responsive" src="{% static 'assets/img/c-4.png' %}" alt="">#}
+{#                                    </a>#}
+{#                                </div>#}
+{#                                <h5><a href="browse_jobseeker.html">Government job</a></h5>#}
+{#                            </div>#}
+
+{#                            <div class="job-type-grid">#}
+{#                                <a href="browse_jobseeker.html" class="btn job-browse-btn btn-radius br-light">Open Now</a>#}
+{#                            </div>#}
+
+                        </div>
+                        </div>
+
+				{% endfor %}
+				
+			</div>
+		</section>
+           {% endblock %}
+                            
+                            
+           
+		
+{#		<footer class="ark-bg footer">#}
+{#			<div class="container">#}
+{#				#}
+{#				<!-- Row Start -->#}
+{#				<div class="row">#}
+{#				#}
+{#					<div class="col-md-12 col-sm-12">#}
+{#						<div class="row">#}
+{#							<div class="col-md-3 col-sm-3">#}
+{#								<h4>Featured Job</h4>#}
+{#								<ul>#}
+{#									<li><a href="#">Browse Jobs</a></li>#}
+{#									<li><a href="#">Premium MBA Jobs</a></li>#}
+{#									<li><a href="#">Access Database</a></li>#}
+{#									<li><a href="#">Manage Responses</a></li>#}
+{#									<li><a href="#">Report a Problem</a></li>#}
+{#									<li><a href="#">Mobile Site</a></li>#}
+{#								</ul>#}
+{#							</div>#}
+{#							<div class="col-md-3 col-sm-3">#}
+{#								<h4>Featured Job</h4>#}
+{#								<ul>#}
+{#									<li><a href="#">Browse Jobs</a></li>#}
+{#									<li><a href="#">Premium MBA Jobs</a></li>#}
+{#									<li><a href="#">Access Database</a></li>#}
+{#									<li><a href="#">Manage Responses</a></li>#}
+{#									<li><a href="#">Report a Problem</a></li>#}
+{#									<li><a href="#">Mobile Site</a></li>#}
+{#								</ul>#}
+{#							</div>#}
+{#							<div class="col-md-3 col-sm-3">#}
+{#								<h4>Featured Job</h4>#}
+{#								<ul>#}
+{#									<li><a href="#">Browse Jobs</a></li>#}
+{#									<li><a href="#">Premium MBA Jobs</a></li>#}
+{#									<li><a href="#">Access Database</a></li>#}
+{#									<li><a href="#">Manage Responses</a></li>#}
+{#									<li><a href="#">Report a Problem</a></li>#}
+{#									<li><a href="#">Mobile Site</a></li>#}
+{#								</ul>#}
+{#							</div>#}
+{#                            #}
+{#                            <div class="col-md-3 col-sm-3">#}
+{#								<h4>Featured Job</h4>#}
+{#								<ul>#}
+{#									<li><a href="#">Browse Jobs</a></li>#}
+{#									<li><a href="#">Premium MBA Jobs</a></li>#}
+{#									<li><a href="#">Access Database</a></li>#}
+{#									<li><a href="#">Manage Responses</a></li>#}
+{#									<li><a href="#">Report a Problem</a></li>#}
+{#									<li><a href="#">Mobile Site</a></li>#}
+{#								</ul>#}
+{#							</div>#}
+{#						</div>#}
+{#					</div>#}
+{#					#}
+{#					#}
+{#					#}
+{#				</div>#}
+{#				#}
+{#				#}
+{#			</div>#}
+{#		</footer>#}
+{#		#}
+{#		<div class="modal fade" id="apply-job" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">#}
+{#			<div class="modal-dialog">#}
+{#				<div class="modal-content" id="myModalLabel2">#}
+{#					<div class="modal-body">#}
+{#						<div class="text-center">#}
+{#							<img src="assets/img/logo.png" class="img-responsive" alt="">#}
+{#							<h4 class="mrg-0">Front End Designer</h4>#}
+{#							<span> 2708 Scenic Way, Sutter</span>#}
+{#						</div>#}
+{#						#}
+{#						<form>#}
+{##}
+{#							<div class="form-group">#}
+{#								<label>Name</label>#}
+{#								<input type="text" class="form-control" placeholder="Name">#}
+{#							</div>#}
+{##}
+{#							<div class="form-group">#}
+{#								<label>Email</label>#}
+{#								<input type="email" class="form-control" placeholder="Email">#}
+{#							</div>#}
+{#					#}
+{##}
+{#							<div class="form-group">#}
+{#								<label>Phone</label>#}
+{#								<input type="text" class="form-control" placeholder="Phone">#}
+{#							</div>#}
+{##}
+{#							<div class="form-group">#}
+{#								<label>Upload CV</label>#}
+{#								<div class="custom-file-upload">#}
+{#									<input type="file" id="file" name="myfiles[]" multiple />#}
+{#								</div>#}
+{#							</div>#}
+{#					#}
+{#							<div class="form-group">#}
+{#								<textarea class="form-control height-120" placeholder="Pase CV"></textarea>#}
+{#							</div>#}
+{##}
+{#							<div class="form-group text-center">#}
+{#								<button type="button" class="btn theme-btn btn-m">Save & Apply</button>#}
+{#							</div>#}
+{#							#}
+{#						</form>#}
+{#							#}
+{#					</div>#}
+{#				</div>#}
+{#			</div>#}
+{#		</div>   #}
+{#		#}
+{#		<div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">#}
+{#			<div class="modal-dialog">#}
+{#				<div class="modal-content" id="myModalLabel1">#}
+{#					<div class="modal-body">#}
+{#						<div class="text-center"><img src="assets/img/logo.png" class="img-responsive" alt=""></div>#}
+{#						#}
+{#						<ul class="nav nav-tabs nav-advance theme-bg" role="tablist">#}
+{#							<li class="nav-item active">#}
+{#								<a class="nav-link" data-toggle="tab" href="#employer" role="tab">#}
+{#								<i class="ti-user"></i> Employer</a>#}
+{#							</li>#}
+{#							<li class="nav-item">#}
+{#								<a class="nav-link" data-toggle="tab" href="#candidate" role="tab">#}
+{#								<i class="ti-user"></i> Candidate</a>#}
+{#							</li>#}
+{#						</ul>#}
+{#							#}
+{#						<div class="tab-content">#}
+{#						#}
+{#							<div class="tab-pane fade in show active" id="employer" role="tabpanel">#}
+{#								<form>#}
+{#									#}
+{#									<div class="form-group">#}
+{#										<label>User Name</label>#}
+{#										<input type="text" class="form-control" placeholder="User Name">#}
+{#									</div>#}
+{#									#}
+{#									<div class="form-group">#}
+{#										<label>Password</label>#}
+{#										<input type="password" class="form-control" placeholder="*********">#}
+{#									</div>#}
+{#									#}
+{#									<div class="form-group">#}
+{#										<span class="custom-checkbox">#}
+{#											<input type="checkbox" id="4">#}
+{#											<label for="4"></label>Remember me#}
+{#										</span>#}
+{#										<a href="#" title="Forget" class="fl-right">Forgot Password?</a>#}
+{#									</div>#}
+{#									<div class="form-group text-center">#}
+{#										<button type="button" class="btn theme-btn full-width btn-m">LogIn </button>#}
+{#									</div>#}
+{#									#}
+{#								</form>#}
+{#								#}
+{#								<div class="log-option"><span>OR</span></div>#}
+{#								#}
+{#								<div class="row mrg-bot-20">#}
+{#									<div class="col-md-6">#}
+{#										<a href="#" title="" class="fb-log-btn log-btn"><i class="fa fa-facebook"></i>Sign In With Facebook</a>#}
+{#									</div>#}
+{#									<div class="col-md-6">#}
+{#										<a href="#" title="" class="gplus-log-btn log-btn"><i class="fa fa-google-plus"></i>Sign In With Google+</a>#}
+{#									</div>#}
+{#								</div>#}
+{#					#}
+{#							</div>#}
+{#							#}
+{#							<div class="tab-pane fade" id="candidate" role="tabpanel">#}
+{#								<form>#}
+{#									#}
+{#									<div class="form-group">#}
+{#										<label>User Name</label>#}
+{#										<input type="text" class="form-control" placeholder="User Name">#}
+{#									</div>#}
+{#									#}
+{#									<div class="form-group">#}
+{#										<label>Password</label>#}
+{#										<input type="password" class="form-control" placeholder="*********">#}
+{#									</div>#}
+{#									#}
+{#									<div class="form-group">#}
+{#										<span class="custom-checkbox">#}
+{#											<input type="checkbox" id="44">#}
+{#											<label for="44"></label>Remember me#}
+{#										</span>#}
+{#										<a href="#" title="Forget" class="fl-right">Forgot Password?</a>#}
+{#									</div>#}
+{#									<div class="form-group text-center">#}
+{#										<button type="button" class="btn theme-btn full-width btn-m">LogIn </button>#}
+{#									</div>#}
+{#									#}
+{#								</form>#}
+{#								#}
+{#								<div class="log-option"><span>OR</span></div>#}
+{#								#}
+{#								<div class="row mrg-bot-20">#}
+{#									<div class="col-md-6">#}
+{#										<a href="#" title="" class="fb-log-btn log-btn"><i class="fa fa-facebook"></i>Sign In With Facebook</a>#}
+{#									</div>#}
+{#									<div class="col-md-6">#}
+{#										<a href="#" title="" class="gplus-log-btn log-btn"><i class="fa fa-google-plus"></i>Sign In With Google+</a>#}
+{#									</div>#}
+{#								</div>#}
+{#								#}
+{#							</div>#}
+{#							#}
+{#						</div>#}
+{#					</div>#}
+{#				</div>#}
+{#			</div>#}
+{#		</div>   #}
+{#    #}
+{#                        </div>#}
+{#                    </div>#}
+{#			</div>#}
+{#        #}
+{#		#}
+{#		 #}
+{#		<script src="assets/js/jquery.min.js"></script>#}
+{#		<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>#}
+{#		<script src="assets/plugins/bootstrap/js/bootsnav.js"></script>#}
+{#		<script src="assets/js/viewportchecker.js"></script>#}
+{#		<script src="assets/plugins/slick-slider/slick.js"></script>#}
+{#		<script src="assets/plugins/bootstrap/js/bootstrap-wysihtml5.js"></script>#}
+{#		#}
+{#		<script src="assets/plugins/nice-select/js/jquery.nice-select.min.js"></script>#}
+{#		<script src="assets/js/custom.js"></script>#}
+{#		<script src="assets/js/main.js"></script>#}
+{#		#}
+{#    </body>#}
+{##}
+{#</html>#}
+</div>
+</div>
+
+</div>
